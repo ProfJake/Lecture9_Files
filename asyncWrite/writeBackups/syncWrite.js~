@@ -1,0 +1,7 @@
+var fs = require('fs');
+
+
+console.log("Begin Writing file");
+fs.writeFileSync('./writeSync', "Synchronous writing is usually not a good choice",
+	     {encoding: 'utf8'});
+console.log("completed");
